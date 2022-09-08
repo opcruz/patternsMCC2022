@@ -27,34 +27,33 @@ In this approach, we will use the Java composition, and our adapter contains the
 ```java
 public class GeometricShapeObjectAdapter implements Shape {
 
-      private GeometricShape adaptee;
+    private GeometricShape adapted;
 
-      public GeometricShapeObjectAdapter(GeometricShape adaptee) {
-            super();
-            this.adaptee = adaptee;
-      }
+    public GeometricShapeObjectAdapter(GeometricShape adapted) {
+        super();
+        this.adapted = adapted;
+    }
 
-      @Override
-      public void draw() {
-      adaptee.drawShape();
-      }
+    @Override
+    public void draw() {
+        adapted.drawShape();
+    }
 
-      @Override
-      public void resize() {
-      System.out.println(description() + " can't be resized. Please create new one with required values.");
-      }
+    @Override
+    public void resize() {
+        System.out.println(description() + " can't be resized. Please create new one with required values.");
+    }
 
-      @Override
-      public String description() {
-            if (adaptee instanceof Triangle) {
+    @Override
+    public String description() {
+        if (adapted instanceof Triangle) {
             return "Triangle object";
-            } else if (adaptee instanceof Rhombus) {
+        } else if (adapted instanceof Rhombus) {
             return "Rhombus object";
-            } else {
+        } else {
             return "Unknown object";
-            }
-      }
-
+        }
+    }
 }
 ```
 
@@ -67,24 +66,28 @@ In this approach, we use the Java Inheritance and extend the source class. So, f
 ```java
 public class TriangleAdapter extends Triangle implements Shape {
 
-      public TriangleAdapter() {
-      super();
-      }
+    public TriangleAdapter() {
+        super();
+    }
 
-      @Override
-      public void draw() {
-      this.drawShape();
-      }
+    public TriangleAdapter(double a, double b, double c) {
+        super(a, b, c);
+    }
 
-      @Override
-      public void resize() {
-      System.out.println("Triangle can't be resized. Please create new one with required values.");
-      }
+    @Override
+    public void draw() {
+        this.drawShape();
+    }
 
-      @Override
-      public String description() {
-      return "Triangle object";
-      }
+    @Override
+    public void resize() {
+        System.out.println("Triangle can't be resized. Please create new one with required values.");
+    }
+
+    @Override
+    public String description() {
+        return "Triangle object";
+    }
 
 }
 ```
@@ -94,24 +97,28 @@ public class TriangleAdapter extends Triangle implements Shape {
 ```java
 public class RhombusAdapter extends Rhombus implements Shape {
 
-      public RhombusAdapter() {
-      super();
-      }
+    public RhombusAdapter() {
+        super();
+    }
 
-      @Override
-      public void draw() {
-      this.drawShape();
-      }
+    public RhombusAdapter(double a, double b) {
+        super(a, b);
+    }
 
-      @Override
-      public void resize() {
-      System.out.println("Rhombus can't be resized. Please create new one with required values.");
-      }
+    @Override
+    public void draw() {
+        this.drawShape();
+    }
 
-      @Override
-      public String description() {
-      return "Rhombus object";
-      }
+    @Override
+    public void resize() {
+        System.out.println("Rhombus can't be resized. Please create new one with required values.");
+    }
+
+    @Override
+    public String description() {
+        return "Rhombus object";
+    }
 
 }
 ```
