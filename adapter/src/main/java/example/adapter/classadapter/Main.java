@@ -1,8 +1,8 @@
-package patterns.example.adapter.classadapter;
+package example.adapter.classadapter;
 
-import patterns.example.adapter.library1.Drawing;
-import patterns.example.adapter.library1.Circle;
-import patterns.example.adapter.library1.Rectangle;
+import example.adapter.library1.Drawing;
+import example.adapter.library1.Circle;
+import example.adapter.library1.Rectangle;
 
 public class Main {
 

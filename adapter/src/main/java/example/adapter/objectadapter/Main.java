@@ -1,10 +1,10 @@
-package patterns.example.adapter.objectadapter;
+package example.adapter.objectadapter;
 
-import patterns.example.adapter.library1.Circle;
-import patterns.example.adapter.library1.Drawing;
-import patterns.example.adapter.library1.Rectangle;
-import patterns.example.adapter.library2.Rhombus;
-import patterns.example.adapter.library2.Triangle;
+import example.adapter.library1.Circle;
+import example.adapter.library1.Drawing;
+import example.adapter.library1.Rectangle;
+import example.adapter.library2.Rhombus;
+import example.adapter.library2.Triangle;
 
 public class Main {
 

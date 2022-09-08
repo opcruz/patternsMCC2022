@@ -1,7 +1,7 @@
-package patterns.example.adapter.classadapter;
+package example.adapter.classadapter;
 
-import patterns.example.adapter.library1.Shape;
-import patterns.example.adapter.library2.Rhombus;
+import example.adapter.library1.Shape;
+import example.adapter.library2.Rhombus;
 
 public class RhombusAdapter extends Rhombus implements Shape {
 
