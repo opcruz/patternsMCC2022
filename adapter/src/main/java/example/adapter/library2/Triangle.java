@@ -1,4 +1,4 @@
-package patterns.example.adapter.library2;
+package example.adapter.library2;
 
 public class Triangle implements GeometricShape {
     // sides

@@ -1,9 +1,9 @@
-package patterns.example.adapter.objectadapter;
+package example.adapter.objectadapter;
 
-import patterns.example.adapter.library1.Shape;
-import patterns.example.adapter.library2.GeometricShape;
-import patterns.example.adapter.library2.Rhombus;
-import patterns.example.adapter.library2.Triangle;
+import example.adapter.library1.Shape;
+import example.adapter.library2.GeometricShape;
+import example.adapter.library2.Rhombus;
+import example.adapter.library2.Triangle;
 
 public class GeometricShapeObjectAdapter implements Shape {
 

@@ -1,4 +1,4 @@
-package patterns.example.adapter.library1;
+package example.adapter.library1;
 
 public class Rectangle implements Shape {
 

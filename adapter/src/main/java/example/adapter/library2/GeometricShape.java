@@ -1,4 +1,4 @@
-package patterns.example.adapter.library2;
+package example.adapter.library2;
 
 // Part of Extra-Geometric-Shape API
 public interface GeometricShape {

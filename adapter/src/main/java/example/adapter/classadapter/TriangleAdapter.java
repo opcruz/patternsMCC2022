@@ -1,7 +1,7 @@
-package patterns.example.adapter.classadapter;
+package example.adapter.classadapter;
 
-import patterns.example.adapter.library1.Shape;
-import patterns.example.adapter.library2.Triangle;
+import example.adapter.library1.Shape;
+import example.adapter.library2.Triangle;
 
 public class TriangleAdapter extends Triangle implements Shape {
 
