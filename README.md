@@ -1,5 +1,5 @@
-# Researched Design Patterns
+## Researched Design Patterns
 
-- Adapter Pattern
+- [Adapter Pattern](./adapter)
 
-- Iterator Pattern
+- [Iterator Pattern](./iterator)
